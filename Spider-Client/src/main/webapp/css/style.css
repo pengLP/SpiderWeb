@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: rgba(65, 189, 247, 0.877);
+    /* height: 2.7rem; */
+    width: 100%;
+    overflow: auto;
+}
+
+#container{
+    height: 15rem;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+}
+
+.news{
+    height: 5rem;
+    width: 100%;
+    /* background-color: brown; */
+    border-top: 1px solid #d8d6d6;
+    padding-top: 10px;
+    padding-bottom: 8px;
+}
+
+li{
+    display: inline;
+    text-align: center;
+    color:#ffffff;
+}
+
+
+nav ul{
+    display: flex;
+}
+
+
+
+nav li{
+    width: 2rem;
+    padding: 0.6rem;
+    /* margin: 0 0.3rem; */
+    float: left;
+    
+}
+
+nav li:hover{
+    background-color: rgba(80, 4, 4, 0.281);
+}
+
+nav li:visited{
+    background-color: rgba(80, 4, 4, 0.281);
+}
+
+nav li:focus{
+    background-color: rgba(80, 4, 4, 0.281);
+}
+
+
+#mid{
+    overflow-x: hidden;
+}
+
+p{
+    float: left;
+    padding-left: 10px;
+    width: 60%;
+    height: 60%;
+    overflow: hidden;
+    font-size: 1rem;
+    text-align: left;
+}
+
+#from{
+    float: left;
+    height: 20%;
+    width: 15%;
+    /* background-color: cadetblue; */
+    position: relative;
+    font-size: 0.1rem;
+    font-family: 宋体;
+    color: rgb(114, 114, 114);
+    margin-left: 10px;
+    margin-top: 4%;
+    text-align: left;
+}
+
+#word{
+    position: absolute;
+    height: 30px;
+    padding-top: 7px;
+    padding-left: 12px;
+    margin-top: 12.5rem;
+    color: #ffffff;
+}
+
+.pic{
+    height: 97%;
+    width: 30%;
+    float: right;
+    margin-right: 12px;
+}
+
+.pic img{
+    height: 100%;
+    width: 100%;
+}
+
+footer{
+    background-color: rgb(0, 0, 0);
+    height: 3.0625rem;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    display: inline-block;
+}
+
+
+#photos img{
+    width: 480px;
+    height: 15rem;
+    float: left;
+}
+
+#photos{
+    width: calc(480px*6);
+    z-index: 1;
+    animation: move 20s ease-out 0s infinite alternate;
+    overflow: hidden;
+}
+
+
+
+@keyframes move{
+    0%,15%{margin-left: 0px;}/*从0到15%的时间段内，停留在0px位置*/
+    20%,35%{margin-left: -480px;}/*从20到35%的时间段内，移动到-480px位置*/
+    40%,50%{margin-left: -960px;}
+    55%,70%{margin-left: calc(-480px*3);}
+    75%,85%{margin-left: calc(-480px*4);}
+    90%,100%{margin-left: calc(-480px*5);} 
+}
+
+.top{
+    bottom: 15px;
+    right: 25px;
+    position: fixed;
+}
+
+.current {  
+    color: #fff;  
+    background: #337ab7;  
+}
